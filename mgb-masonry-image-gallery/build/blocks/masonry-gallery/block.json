@@ -1,7 +1,7 @@
 {
-  "apiVersion": 2,
+  "apiVersion": 3,
   "name": "migb/masonry-gallery",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "title": "Masonry Gallery",
   "category": "media",
   "description": "Showcase Images in a Masonry Gallery View.",
@@ -13,15 +13,15 @@
   ],
   "supports": {
     "html": false,
-    "anchor": false,
-    "customClassName": false
+    "anchor": true
   },
   "attributes": {
     "galleryId": {
       "type": "string"
     },
     "images": {
-      "type": "array"
+      "type": "array",
+      "default": []
     },
     "deskCol": {
       "type": "number",
@@ -55,98 +55,20 @@
       "type": "string",
       "default": "none"
     },
-    "photoBorderStyle": {
-      "type": "string",
-      "default": "solid"
-    },
-    "photoBorderColor": {
-      "type": "string"
-    },
-    "photoTopBorderWidth": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoRightBorderWidth": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoBottomBorderWidth": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoLeftBorderWidth": {
-      "type": "string",
-      "default": "0"
-    },
-    "enablePhotoLinkedBorder": {
-      "type": "boolean",
-      "default": true
-    },
-    "photoLinkedBorderWidth": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoTopBorderRadius": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoRightBorderRadius": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoBottomBorderRadius": {
-      "type": "string",
-      "default": "0"
-    },
-    "photoLeftBorderRadius": {
-      "type": "string",
-      "default": "0"
-    },
-    "enablePhotoLinkedBorderRadius": {
-      "type": "boolean",
-      "default": true
-    },
-    "photoLinkedBorderRadius": {
-      "type": "string",
-      "default": "0"
-    },
     "showCaption": {
       "type": "boolean",
       "default": false
     },
-    "captionColor": {
-      "type": "string",
-      "default": "#ffffff"
-    },
     "captionPosition": {
       "type": "string",
       "default": "center"
-    },
-    "captionDeskFontSize": {
-      "type": "number",
-      "default": 16
-    },
-    "captionTabFontSize": {
-      "type": "number",
-      "default": 15
-    },
-    "captionPhoneFontSize": {
-      "type": "number",
-      "default": 14
-    },
-    "enableCustomColor": {
-      "type": "boolean",
-      "default": false
-    },
-    "zIndex": {
-      "type": "number"
-    },
-    "customClass": {
-      "type": "string"
     }
   },
-  "textdomain": "masonry-image-gallery",
+  "textdomain": "mgb-masonry-image-gallery",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": [
+    "file:./style-index.css"
+  ],
+  "viewScript": "migb-fslightbox"
 }

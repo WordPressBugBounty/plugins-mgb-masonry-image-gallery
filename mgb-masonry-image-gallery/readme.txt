@@ -1,9 +1,9 @@
-=== Masonry Image Gallery Gutenberg Block  ===
+=== MGB Masonry Image Gallery  ===
 Contributors: Binsaifullah
 Tags: Masonry Gallery,Image Gallery, photo gallery, gallery block, gutenberg
 Requires at least: 6.0
-Tested up to: 6.6.2
-Stable tag: 2.2.3
+Tested up to: 6.9
+Stable tag: 2.3.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Masonry Image Gallery is a custom Gutenberg Block built with Native Components t
 
 == Description ==
 
-**Masonry Image Gallery** is a custom **Gutenberg Block** built with **Gutenberg Native Components**. It allows you to create an image gallery in Gutenberg Editor easily. In addition, you can style gallery images and gallery container with different options. You can also add a lightbox to the gallery images.
+**MGB Masonry Image Gallery** is a custom **Gutenberg Block** built with **Gutenberg Native Components**. It allows you to create an image gallery in Gutenberg Editor easily. In addition, you can style gallery images and gallery container with different options. You can also add a lightbox to the gallery images.
 
 ### Video Overview
 [youtube https://www.youtube.com/watch?v=-9urH8xNVe4]
@@ -55,9 +55,16 @@ Sure, the block is 100% responsive.
 
 Sure. It is highly customizable like Gutenberg default blocks.
 
+== Third Party Library == 
+[fslightbox](https://github.com/banthagroup/fslightbox) is used to create lightbox.
+
 == Changelog ==
+= 2.3.0 = 
+* Magnific Popup lightbox is depreated, so it is removed and a vanilla js library is used for speed and stability. Block will ask for attempt recovery, simple recover it.
+
 = 2.2.2 =
 * Compatible with Latest WP Version 6.6.2
+
 = 2.2.1 =
 * Compatible with Latest WP Version 6.6.1
 = 2.2.0 =
